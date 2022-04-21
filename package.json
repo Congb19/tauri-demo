@@ -1,6 +1,6 @@
 {
   "name": "tauri-demo",
-  "version": "1.2.0",
+  "version": "0.0.1",
   "description": "Tauri demo Congb19",
   "keywords": [
     "vite",
@@ -12,10 +12,12 @@
   "scripts": {
     "lint": "exit 0;",
     "dev": "vite --port 8080 & tauri dev",
+    "init-tauri": "tauri init",
     "serve": "vite --port 8080",
     "serve:native": "VITE_HTTP_HANDLER=NATIVE vite --port 8080",
     "serve:tauri": "tauri dev",
     "build:web": "vite build",
+    "build:tauri": "tauri build",
     "build": "VITE_HTTP_HANDLER=NATIVE vite build && tauri build"
   },
   "dependencies": {
@@ -26,20 +28,18 @@
     "roboto-fontface": "0.10.0",
     "vue": "3.2.20",
     "vue-global-api": "0.4.1",
-    "vue-router": "4.0.11",
-    "ynetwork": "3.0.6"
+    "vue-router": "4.0.11"
   },
   "devDependencies": {
-    "@tauri-apps/cli": "1.0.0-beta.10",
+    "@tauri-apps/cli": "1.0.0-rc.8",
     "@vitejs/plugin-vue": "1.9.4",
-    "@vuetify/vite-plugin": "1.0.0-alpha.5",
     "sass": "1.43.4",
     "sass-loader": "12.3.0",
     "vite": "2.6.13"
   },
   "repository": {
     "type": "github",
-    "url": "https://github.com/yooneskh/vite-tauri-template"
+    "url": "https://github.com/Congb19/tauri-demo"
   },
   "license": "ISC"
 }
